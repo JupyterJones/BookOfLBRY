@@ -11,6 +11,8 @@ Ability to see biggest supports on LBRY Blockchain,
 Richlist, shows top 100 LBC Wallet's.
 LBRYNomics button.
 
+Live App : 
+https://www.lbryturkey.com/stats
 
 used databases; 
 http://chainquery.lbry.com/, 
