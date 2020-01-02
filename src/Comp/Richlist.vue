@@ -18,9 +18,9 @@
           <td>
             <a
             :href="'https://explorer.lbry.com/address/'+address.address"
-            style="text-decoration: none; color: white; font-family: Roboto, sans-serif;font-weight: 500">{{address.address}}</a>
+            style="text-decoration: none; color: white; font-family: Roboto, sans-serif;font-weight: 500">{{address.address.substring(0,10)+ '... - Details'}}</a>
             <img
-              v-if="['rFLUohPG4tP3gZHYoyhvADCtrDMiaYb7Qd','bRo4FEeqqxY7nWFANsZsuKEWByEgkvz8Qt','bU2XUzckfpdEuQNemKvhPT1gexQ3GG3SC2','r9PGXsejVJb9ZfMf3QVdDEJCzxkd9JLxzL','r9srwX7DEN7Mex3a8oR1mKSqQmLBizoJvi','rFLUohPG4tP3gZHYoyhvADCtrDMiaYb7Qd'].includes(address.address)" alt="" src="../../lbryinc.png" width="12px">
+              v-if="['rFLUohPG4tP3gZHYoyhvADCtrDMiaYb7Qd','bRo4FEeqqxY7nWFANsZsuKEWByEgkvz8Qt','bU2XUzckfpdEuQNemKvhPT1gexQ3GG3SC2','r9PGXsejVJb9ZfMf3QVdDEJCzxkd9JLxzL','r9srwX7DEN7Mex3a8oR1mKSqQmLBizoJvi','rFLUohPG4tP3gZHYoyhvADCtrDMiaYb7Qd'].includes(address.address)" alt="" src="lbryinc.png" width="12px">
           </td>
           <td>{{Math.round(address.balance)}} <span style="font-weight: 500;"> LBC</span></td>
           <td>{{address.first_seen.toString().substring(0,10) +' '+ address.first_seen.toString().substring(11,19)}}</td>
